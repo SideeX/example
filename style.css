@@ -1,0 +1,62 @@
+.buttonDiv {
+    margin: auto;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    visibility: visible;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.demoDiv {
+    z-index: 0;
+    margin: auto;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    border: 5px outset black;
+    background-color: rgb(224, 231, 233);
+    text-align: center;
+}
+
+h2.center {
+    text-align: center;
+}
+
+.dragAndDropDiv {
+    margin: auto;
+    width: 300px;
+    height: 560px;
+    position: relative;
+    border: 5px outset black;
+    background-color: rgb(224, 231, 233);
+    text-align: center;
+}
+
+#div1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #aaaaaa;
+}
+
+#opacity:hover {
+    opacity: 0.5
+}
+
+#clr {
+    background-color: rgb(5, 10, 5);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

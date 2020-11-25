@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>button-to-change-color</title>
+</head>
+
+<body>
+    <div>
+        <h2 class="center">SideeX Commands Demonstration</h2>
+        <div class="demoDiv">
+
+            <button title="I have title" class="buttonDiv" id="Button" style="white-space:pre-wrap; background-color:white;" onclick="changeColor('Button')">Click me to change color</button>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    var pauseCount = 0
+
+    function changeColor(id) {
+        if (pauseCount == 1) {
+            document.getElementById(id).style.backgroundColor = "white";
+            pauseCount--;
+        } else if (pauseCount == 0) {
+            document.getElementById(id).style.backgroundColor = "pink";
+            pauseCount++;
+        }
+
+    }
+</script>
+
+</html>

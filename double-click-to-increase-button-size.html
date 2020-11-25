@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>double-click-to-increase-button-size</title>
+</head>
+
+<body>
+    <div>
+        <h2 class="center">SideeX Commands Demonstration</h2>
+        <div class="demoDiv">
+            <button class="btn btn-primary buttonDiv" id="demoDBClickAtButton" style="white-space:pre-wrap;" ondblclick="changeSize('demoDBClickAtButton')">Doublk click me to increase button size</button>
+        </div>
+    </div>
+
+</body>
+<script>
+    var doubleClickCount = 0
+
+    function changeSize(btn, clickType) {
+        doubleClickCount++;
+        var property = document.getElementById(btn);
+        clientRect = property.getBoundingClientRect();
+
+        property.textContent = "You double click " + doubleClickCount.toString() + " times"
+
+        modifyHeight = clientRect.height + 10;
+        modifyWidth = clientRect.width + 10;
+
+        if (clientRect.height > 180) {
+            property.textContent = "Max size";
+        } else {
+            property.style.height = modifyHeight.toString() + 'px';
+            property.style.width = modifyWidth.toString() + 'px';
+        }
+    }
+</script>
+
+</html>

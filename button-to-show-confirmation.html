@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+
+    <title>button-to-show-confirmation</title>
+</head>
+
+<body>
+    <div>
+        <h2 class="center">SideeX Commands Demonstration</h2>
+        <div class="demoDiv">
+
+            <button class="buttonDiv" id="Button" onclick="confirmation()">Click button to call the confirmation</button>
+
+            <p id="text"></p>
+            <br>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    function confirmation() {
+        var text = document.getElementById("text");
+        if (confirm('Do you want to leave?')) {
+            text.innerHTML = "You choose Ok!";
+        } else {
+            text.innerHTML = "You canceled!";
+        }
+    }
+</script>
+
+</html>

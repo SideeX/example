@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>click-to-increase-button-size</title>
+</head>
+
+<body>
+    <div>
+        <h2 class="center">SideeX Commands Demonstration</h2>
+        <div class="demoDiv">
+            <button class="btn btn-primary buttonDiv" id="demoClickAtButton" style="white-space:pre-wrap;" onclick="changeSize('demoClickAtButton')">Click me to increase the size of button</button>
+        </div>
+    </div>
+</body>
+<script>
+    var clickCount = 0
+
+    function changeSize(btn) {
+
+        clickCount++;
+        var property = document.getElementById(btn);
+
+        clientRect = property.getBoundingClientRect();
+        property.textContent = "You click " + clickCount.toString() + " times"
+        modifyHeight = clientRect.height + 10;
+        modifyWidth = clientRect.width + 10;
+
+        if (clientRect.height > 180) {
+            property.textContent = "Max size";
+        } else {
+            property.style.height = modifyHeight.toString() + 'px';
+            property.style.width = modifyWidth.toString() + 'px';
+        }
+    }
+</script>
+
+</html>
