@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>mouseover-to-change-opacity</title>
+</head>
+
+<body>
+    <div>
+        <h2 class="center">SideeX Commands Demonstration</h2>
+        <div class="demoDiv">
+            <br>
+            <br>
+            <img id="opacity" onmouseover="changeOpacity(this)" onmouseout="changeOpacityBack(this)" src="sideex-logo.png">
+        </div>
+
+    </div>
+
+</body>
+<script>
+    function changeOpacity(x) {
+        x.style.opacity = 0.5
+    }
+
+    function changeOpacityBack(x) {
+        x.style.opacity = 1
+    }
+</script>
+
+
+</html>
