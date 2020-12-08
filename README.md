@@ -1,1 +1,1 @@
-# example
+# Examples for SideeX commands
