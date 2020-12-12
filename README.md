@@ -1,6 +1,6 @@
 # Examples for SideeX commands
 
-Follow this guide to use the [SideeX commands](https://hackmd.io/@sideex/book/%2F%40sideex%2Fcommands) examples. The complete collection of example test suites can be found [here](https://github.com/SideeX/example/tree/main/testsuite_for_example).
+Follow this guide to use the [SideeX commands](https://hackmd.io/@sideex/book/%2F%40sideex%2Fcommands) examples. The complete collection of example test suites can be found [here](https://github.com/SideeX/example/tree/main/example_testsuites).
 
 ### Step 1:
 Open the [SideeX Commands List](https://hackmd.io/@sideex/book/%2F%40sideex%2Fcommands) where all the commands are shown.
