@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>delay-and-show</title>
+    </head>
+
+    <body>
+        <div>
+            <h2 class="center">SideeX Commands Demonstration</h2>
+            <div class="dragAndDropDiv" id="dragAndDropDiv">
+                <button id="hide_button" id="hide_button">I am button</button>
+                <button class="buttonDiv" id="Button" onclick="showButton()">
+                    Click me to show button.
+                </button>
+            </div>
+        </div>
+    </body>
+    <script>
+        function showButton() {
+            setTimeout(function () {
+                document.getElementById("hide_button").style.visibility =
+                    "visible";
+            }, 3000);
+        }
+    </script>
+</html>
