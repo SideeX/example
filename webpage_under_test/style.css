@@ -60,11 +60,3 @@ h2.center {
     margin: 4px 2px;
     cursor: pointer;
 }
-
-#hide_button {
-    visibility: hidden;
-}
-
-#show_button {
-    visibility: visible;
-}
