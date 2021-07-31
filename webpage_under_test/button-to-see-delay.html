@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>button-to-see-delay</title>
+    </head>
+
+    <body>
+        <div>
+            <h2 class="center">SideeX Commands Demonstration</h2>
+            <div class="demoDiv">
+                <button onclick="Click()" class="buttonDiv" id="Button">
+                    Click twice to see the command delay in SideeX.
+                </button>
+                <h3 id="delayTime"></h3>
+            </div>
+        </div>
+    </body>
+    <script>
+        var clickOnce = 0;
+        var firstClick;
+        function Click() {
+            if (!clickOnce) {
+                clickOnce = 1;
+                firstClick = Date.now();
+            } else {
+                clickOnce = 0;
+                let delaytime = (Date.now() - firstClick) / 1000.0;
+                document.getElementById("delayTime").innerHTML =
+                    "delay time: " + delaytime.toString() + " seconds";
+            }
+        }
+    </script>
+</html>
