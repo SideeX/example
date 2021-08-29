@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>delay-and-show</title>
+    </head>
+
+    <body>
+        <div>
+            <h2 class="center">SideeX Commands Demonstration</h2>
+            <div class="dragAndDropDiv" id="dragAndDropDiv">
+                <p id="text">SideeX</p>
+                <button
+                    class="buttonDiv"
+                    id="Button"
+                    onclick="changeTextButton()"
+                >
+                    Click me to change text.
+                </button>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function changeTextButton() {
+            setTimeout(function () {
+                document.getElementById("text").innerHTML = "Hello World!!!";
+            }, 3000);
+        }
+    </script>
+</html>
