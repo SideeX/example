@@ -15,7 +15,7 @@
             <div class="demoDiv">
                 <iframe
                     src="https://sideex.github.io/example/webpage_under_test/button-to-show-confirmation.html"
-                    sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin"
+                    sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin"
                     id="iframe1"
                 ></iframe>
                 <button id="Button" onclick="confirmation()">
@@ -30,6 +30,7 @@
 
     <script>
         function confirmation() {
+            confirm("Press a button!");
             var iframe = document.getElementById("iframe1");
             if (
                 iframe.src ==
