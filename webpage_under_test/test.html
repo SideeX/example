@@ -15,26 +15,32 @@
             <div class="demoDiv">
                 <iframe
                     src="https://sideex.github.io/example/webpage_under_test/button-to-show-confirmation.html"
-                    sandbox="allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin"
+                    sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin"
+                    id="iframe1"
                 ></iframe>
-                <!-- <button class="buttonDiv" id="Button" onclick="confirmation()">
-                    Click button to call the confirmation
+                <button id="Button" onclick="confirmation()">
+                    Click button to change iframe source
                 </button>
 
                 <p id="text"></p>
-                <br /> -->
+                <br />
             </div>
         </div>
     </body>
 
     <script>
-        // function confirmation() {
-        //     var text = document.getElementById("text");
-        //     if (confirm("Do you want to leave?")) {
-        //         text.innerHTML = "You choose Ok!";
-        //     } else {
-        //         text.innerHTML = "You canceled!";
-        //     }
-        // }
+        function confirmation() {
+            var iframe = document.getElementById("iframe1");
+            if (
+                iframe.src ==
+                "https://sideex.github.io/example/webpage_under_test/button-to-show-confirmation.html"
+            ) {
+                iframe.src =
+                    "https://sideex.github.io/example/webpage_under_test/search-box.html";
+            } else {
+                iframe.src =
+                    "https://sideex.github.io/example/webpage_under_test/button-to-show-confirmation.html";
+            }
+        }
     </script>
 </html>
