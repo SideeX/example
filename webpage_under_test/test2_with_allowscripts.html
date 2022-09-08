@@ -30,7 +30,6 @@
 
     <script>
         function confirmation() {
-            confirm("Press a button!");
             var iframe = document.getElementById("iframe1");
             if (
                 iframe.src ==
@@ -42,6 +41,7 @@
                 iframe.src =
                     "https://sideex.github.io/example/webpage_under_test/button-to-show-confirmation.html";
             }
+            confirm("Press a button!");
         }
     </script>
 </html>
