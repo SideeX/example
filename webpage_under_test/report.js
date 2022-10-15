@@ -1,6 +1,3 @@
-// var SIDEEX_REPORT = JSON.parse(
-//     document.getElementById("json-report").textContent
-// );
 var e,
     t,
     n,
@@ -8630,6 +8627,3 @@ class ri extends k {
     }
 }
 console.log("Hello!! Here is SideeX Report.");
-// const li = SIDEEX_REPORT;
-// console.log("report", li),
-//     Be(ft.createElement(ri, { report: li }), document.getElementById("app"));
