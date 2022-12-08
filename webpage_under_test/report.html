@@ -4,12 +4,20 @@
     <meta charset="utf-8" />
     <meta name="version" />
     <title>report</title>
-    <!-- <link rel="stylesheet" href="report.css" /> -->
 </head>
 
-<body style="background-color: #f3f4f6; padding: 1rem; font-size: 1rem">
+<body style="background-color: #213647; padding: 1rem; font-size: 1rem">
     <div id="app"></div>
-
+    <div id="warn-page">
+        <div style="padding: 50px; background-color: #f0b240; color: white">
+            <div style="text-align: center; font-size: 50px; font-family: Roboto, Helvetica, Arial, sans-serif;">
+                <strong>Warning!</strong><br>Please do not reload the page and click
+                the report
+                again.
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 5%;"><img src="error_bird.svg"></div>
+    </div>
     <div id="my-modal">
         <img id="modal-image" />
         <video id="modal-video" controls style="display: none">
